@@ -1,0 +1,170 @@
+.projects-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(15, 17, 49);
+  text-align: center;
+  background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+  overflow: scroll;
+}
+
+.projects-section {
+  height: 100vh;
+background-color: rgb(15, 17, 49);
+background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+color: white;
+max-width: 1600px;
+max-height: 900px;
+margin: 0 auto;
+
+}
+
+.projects-title {
+  padding: 1rem 2rem;
+  height: 10%
+}
+
+ .projects-footer {
+  height: 10%
+}
+
+
+.project-list {
+  margin: 1rem auto;
+  height: 100%;
+  width: 70%;
+  overflow-y: scroll;
+}
+
+.project-list::-webkit-scrollbar {
+  display: none;
+}
+
+.project {
+  display: flex;
+  margin: 1rem auto;
+  width: 100%;
+  background-color: rgb(11, 7, 59);
+  padding: 10px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.project-image {
+  width: 25%;
+  height: 200px;
+  padding: 5px;
+}
+
+.project-info {
+  text-align: left;
+  width: 75%;
+  padding: 5px;
+}
+
+.project-title {
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #A08551;
+    height: 40px;
+    padding-bottom: 1rem;
+    border-top: white 3px solid;
+    border-bottom: white 3px solid;
+}
+
+.project-link-image {
+  height: 30px;
+}
+
+.project-skills {
+  margin: 1rem auto;
+}
+
+
+.skills-title {
+  text-align: center;
+  margin: 1rem auto;
+  width: 300px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #A08551;
+  height: 35px;
+  padding-bottom: 1rem;
+  border-top: white 3px solid;
+  border-bottom: white 3px solid;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.skill-list li {
+display: block;
+}
+
+.extra-detail {
+  height: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.show-project {
+  height: 300px;
+}
+
+.see-more {
+  text-align: center;
+  margin: 1rem auto;
+  width: 150px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #A08551;
+  height: 30px;
+  padding-bottom: 1rem;
+  border: white 2px solid;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .projects-section {
+width: 100vw;
+padding: 1px;
+  }
+
+  .project-list {
+    margin: 1rem 0; 
+    height: 100%;
+    width: 100%;
+  }
+  .project-image {
+    width: 80%;
+    margin: 1px auto;
+  }
+  
+  .project-info {
+    margin: 1px auto;
+  }
+
+  .skills-title {
+    text-align: center;
+    margin: 1.5rem auto;
+    width: 200px;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    height: 35px
+  }
+  .project-links {
+    text-align: center;
+    margin: 0.5rem auto;
+  }
+
+  .show-project {
+    height: 450px;
+  }
+}
