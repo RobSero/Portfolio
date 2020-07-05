@@ -3,19 +3,18 @@
   width: 100vw;
   background-color: rgb(15, 17, 49);
   text-align: center;
-  background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   overflow: scroll;
 }
 
 .projects-section {
   height: 100vh;
 background-color: rgb(15, 17, 49);
-background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 color: white;
 max-width: 1600px;
 max-height: 900px;
 margin: 0 auto;
-
 }
 
 .projects-title {
@@ -43,10 +42,27 @@ margin: 0 auto;
   display: flex;
   margin: 1rem auto;
   width: 100%;
-  background-color: rgb(11, 7, 59);
+  
+  border-radius: 10px;
   padding: 10px;
   overflow: hidden;
   flex-wrap: wrap;
+}
+
+.proj-one {
+  background-color: rgba(7, 5, 34, 0.74);
+}
+.proj-two {
+  background-color: rgba(26, 43, 99, 0.514);
+}
+.proj-three {
+  background-color: rgba(55, 70, 121, 0.397);
+}
+.proj-four {
+  background-color: rgba(65, 99, 114, 0.479);
+}
+.proj-five {
+  background-color: rgba(129, 192, 187, 0.397);
 }
 
 .project-image {
@@ -117,6 +133,18 @@ display: block;
   height: 300px;
 }
 
+.show-project-two {
+  height: 300px;
+}
+
+.show-project-three {
+  height: 300px;
+}
+
+.show-project-five {
+  height: 300px;
+}
+
 .see-more {
   text-align: center;
   margin: 1rem auto;
@@ -141,6 +169,7 @@ padding: 1px;
     margin: 1rem 0; 
     height: 100%;
     width: 100%;
+    padding: 13px;
   }
   .project-image {
     width: 80%;
@@ -166,5 +195,17 @@ padding: 1px;
 
   .show-project {
     height: 450px;
+  }
+
+  .show-project-two {
+    height: 600px;
+  }
+
+  .show-project-three {
+    height: 700px;
+  }
+
+  .show-project-five {
+    height: 500px;
   }
 }

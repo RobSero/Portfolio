@@ -7,10 +7,11 @@ body {
     text-align: center;
     box-sizing: border-box;
     color: rgb(50, 47, 87);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
     width:100vw;
     max-width: 100vw;
     padding: 0;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
 
 a {
@@ -21,7 +22,13 @@ a {
   display: none;
 }
 
+.navbtn:hover {
+cursor: pointer;
+}
 
+p {
+  font-size: 0.95em;
+}
 
 
 

@@ -5,16 +5,36 @@ const col3 = document.getElementById('column3')
 const col4 = document.getElementById('column4')
 const columnFormatting = document.getElementsByClassName('col')
 
-
+// PAGES
 const mainPage = document.querySelector('.holder')
 const aboutPage = document.querySelector('.about-container')
 const projectPage = document.querySelector('.projects-container')
+const skillPage = document.querySelector('.skill-container')
+const archPage = document.querySelector('.arch-container')
 
+// ABOUT
 const aboutBackButton = document.querySelector('.button-styling')
-const mobileBackButton = document.querySelector('.mobile-back-button')
+const mobileAboutBackButton = document.querySelector('.mobile-about-back-button')
 const aboutToProjectButton = document.getElementById('nav-about-to-project')
+const aboutToSkillsButton = document.getElementById('nav-about-to-skills')
 
+// PROJECT
 const projectBackButton = document.getElementById('project-back')
+const projectToAboutButton = document.getElementById('nav-project-to-about')
+const projectToSkillsButton = document.getElementById('nav-project-to-skills')
+
+//  SKILLS
+const skillsBackButton = document.getElementById('desktop-skill-back')
+const mobileSkillsBackButton = document.querySelector('.mobile-skill-back-button')
+const skillsToAboutButton = document.getElementById('nav-skills-to-about')
+const skillsToProjectButton = document.getElementById('nav-skills-to-project')
+
+//  ARCH
+const archBackButton = document.getElementById('desktop-arch-back')
+const mobileArchBackButton = document.querySelector('.mobile-arch-back-button')
+const archToAboutButton = document.getElementById('nav-arch-to-about')
+
+
 
 const showToggleOne = document.getElementById('show-toggle-one')
 const projectOne = document.getElementById('project-one')
@@ -24,7 +44,8 @@ const showToggleThree = document.getElementById('show-toggle-three')
 const projectThree = document.getElementById('project-three')
 const showToggleFour = document.getElementById('show-toggle-four')
 const projectFour = document.getElementById('project-four')
-const aboutMeProject = document.getElementById('project-about-me-button')
+const showToggleFive = document.getElementById('show-toggle-five')
+const projectFive = document.getElementById('project-five')
 
 
 // COLUMN DYNAMIC STYLING ON MOUSEOVER
@@ -114,10 +135,23 @@ aboutBackButton.addEventListener('click', ()=> {
   mainPage.classList.remove('hide')
   aboutPage.classList.add('hide')
 })
-mobileBackButton.addEventListener('click', ()=> {
+
+mobileAboutBackButton.addEventListener('click', ()=> {
   mainPage.classList.remove('hide')
   mainPage.classList.add('show')
   aboutPage.classList.add('hide')
+})
+
+aboutToProjectButton.addEventListener('click', ()=> {
+  aboutPage.classList.add('hide')
+  projectPage.classList.remove('hide')
+  projectPage.classList.add('show')
+})
+
+aboutToSkillsButton.addEventListener('click', ()=> {
+  aboutPage.classList.add('hide')
+  skillPage.classList.remove('hide')
+  skillPage.classList.add('show')
 })
 
 // PROJECT SECTION
@@ -139,21 +173,21 @@ showToggleOne.addEventListener('click', ()=> {
 })
 
 showToggleTwo.addEventListener('click', ()=> {
-  if (projectTwo.classList.contains('show-project')){
-    projectTwo.classList.remove('show-project')
+  if (projectTwo.classList.contains('show-project-two')){
+    projectTwo.classList.remove('show-project-two')
     showToggleTwo.innerHTML = 'MORE'
   } else {
-    projectTwo.classList.add('show-project')
+    projectTwo.classList.add('show-project-two')
     showToggleTwo.innerHTML = 'LESS'
   }
 })
 
 showToggleThree.addEventListener('click', ()=> {
-  if (projectThree.classList.contains('show-project')){
-    projectThree.classList.remove('show-project')
+  if (projectThree.classList.contains('show-project-three')){
+    projectThree.classList.remove('show-project-three')
     showToggleThree.innerHTML = 'MORE'
   } else {
-    projectThree.classList.add('show-project')
+    projectThree.classList.add('show-project-three')
     showToggleThree.innerHTML = 'LESS'
   }
 })
@@ -168,14 +202,89 @@ showToggleFour.addEventListener('click', ()=> {
   }
 })
 
-aboutToProjectButton.addEventListener('click', ()=> {
-  aboutPage.classList.add('hide')
-  projectPage.classList.remove('hide')
-  projectPage.classList.add('show')
+showToggleFive.addEventListener('click', ()=> {
+  if (projectFive.classList.contains('show-project-five')){
+    projectFive.classList.remove('show-project-five')
+    showToggleFive.innerHTML = 'MORE'
+  } else {
+    projectFive.classList.add('show-project-five')
+    showToggleFive.innerHTML = 'LESS'
+  }
 })
 
 projectBackButton.addEventListener('click', ()=> {
   mainPage.classList.remove('hide')
   mainPage.classList.add('show')
   projectPage.classList.add('hide')
+})
+
+projectToSkillsButton.addEventListener('click', ()=> {
+  projectPage.classList.add('hide')
+  skillPage.classList.remove('hide')
+  skillPage.classList.add('show')
+})
+
+projectToAboutButton.addEventListener('click', ()=> {
+  projectPage.classList.add('hide')
+  aboutPage.classList.remove('hide')
+  aboutPage.classList.add('show')
+})
+
+
+
+// SKILL SECTION
+
+col3.addEventListener('click', ()=> {
+  mainPage.classList.add('hide')
+  skillPage.classList.remove('hide')
+  skillPage.classList.add('show')
+})
+
+skillsBackButton.addEventListener('click', ()=> {
+  mainPage.classList.remove('hide')
+  mainPage.classList.add('show')
+  skillPage.classList.add('hide')
+})
+mobileSkillsBackButton.addEventListener('click', ()=> {
+  mainPage.classList.remove('hide')
+  mainPage.classList.add('show')
+  skillPage.classList.add('hide')
+})
+
+skillsToAboutButton.addEventListener('click', ()=> {
+  skillPage.classList.add('hide')
+  aboutPage.classList.remove('hide')
+  aboutPage.classList.add('show')
+})
+
+skillsToProjectButton.addEventListener('click', ()=> {
+  skillPage.classList.add('hide')
+  projectPage.classList.remove('hide')
+  projectPage.classList.add('show')
+})
+
+// ARCH SECTION
+
+col4.addEventListener('click', ()=> {
+  mainPage.classList.add('hide')
+  archPage.classList.remove('hide')
+  archPage.classList.add('show')
+})
+
+archBackButton.addEventListener('click', ()=> {
+  mainPage.classList.remove('hide')
+  mainPage.classList.add('show')
+  archPage.classList.add('hide')
+})
+
+archToAboutButton.addEventListener('click', ()=> {
+  archPage.classList.add('hide')
+  aboutPage.classList.remove('hide')
+  aboutPage.classList.add('show')
+})
+
+mobileArchBackButton.addEventListener('click', ()=> {
+  mainPage.classList.remove('hide')
+  mainPage.classList.add('show')
+  archPage.classList.add('hide')
 })
