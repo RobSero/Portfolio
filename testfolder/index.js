@@ -8,7 +8,7 @@ const columnFormatting = document.getElementsByClassName('col')
 // PAGES
 const mainPage = document.querySelector('.holder')
 const aboutPage = document.querySelector('.about-container')
-const projectPage = document.querySelector('.projects-container')
+const projectPage = document.querySelector('.project-container')
 const skillPage = document.querySelector('.skill-container')
 const archPage = document.querySelector('.arch-container')
 
@@ -99,6 +99,8 @@ backButton.forEach(button => {
     archPage.classList.remove('show')
     skillPage.classList.add('hide')
     skillPage.classList.remove('show')
+    projectPage.classList.add('hide')
+    projectPage.classList.remove('show')
   })
 })
 

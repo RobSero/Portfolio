@@ -1,0 +1,47 @@
+
+.project-image {
+  width: 700px;
+}
+
+.light-border {
+  outline: solid #ffffff 4px;
+  outline-offset: 10px;
+}
+
+.dark-border {
+  outline: solid #22212B 4px;
+  outline-offset: 10px;
+}
+
+.project-header {
+  margin-bottom: 15px;
+}
+
+.see-project-button {
+  
+  width: 150px;
+  font-size: 18px;
+  margin: 15px auto;
+}
+
+.light-button {
+  border: solid 2px #22212B;
+}
+
+.dark-button {
+  border: solid 2px #ffffff;
+}
+
+/* TABLET STYLING */
+
+@media only screen and (max-width: 768px) {
+  .project-image {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .project-image {
+    width: 100%;
+  }
+}
