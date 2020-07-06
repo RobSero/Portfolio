@@ -1,0 +1,107 @@
+/* -------------------------------  NAV BAR AND SOCIAL MEDIA SECTION  ------------------------------- */
+
+/* .nav-section {
+  display: none;
+} */
+
+.drop-down-btn {
+    position: fixed;
+    z-index: 3;
+    text-align: center;
+    right: 2%;
+    top: 5px;
+}
+.drop-down-btn img {
+    height: 50px;
+    width: 50px;
+}
+
+.drop-down-btn img:hover {
+    cursor: pointer;
+}
+
+.dropdown-social {
+  height: 0;
+  overflow: hidden;
+  transition: all 300ms ease;
+  position: fixed;
+  z-index: 4;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(50, 47, 87);
+}
+
+.show {
+    height: 50px;
+    box-shadow: 0 0 8px rgb(50, 47, 87);
+}
+
+.social-media-links {
+    float: left;
+    margin-left: 1em;
+}
+
+li {
+    display: inline-block;
+    margin: 2px;
+}
+
+.contact-me-section {
+    float: right;
+    margin-top: 0.7em;
+    margin-right: 2em;
+    color: white;
+    border: 2px solid white;
+    padding: 3px 25px 3px 25px;
+    font-weight: 100;
+    height: 30px;
+    font-size: 0.8em;
+    line-height: 21px;
+}
+
+.faded-view {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    opacity: 0.6;
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+    display: none;
+}
+
+/* MOBILE STYLING */
+
+@media only screen and (max-width: 600px) {
+
+.dropdown-social ul {
+  width:100%
+}
+
+  .social-media-links {
+    float: none;
+    margin-left: 0;
+}
+
+.show {
+  height: 150px
+}
+
+.drop-down-btn img {
+  height: 40px;
+  width: 40px;
+}
+
+.contact-me-section {
+  text-align: center;
+  float: none;
+  margin: 0.5rem auto;
+  width: 30%;
+  color: white;
+  border: 2px solid white;
+  padding: 3px 25px 3px 25px;
+  font-weight: 100;
+  height: 30px;
+  font-size: 0.8em;
+  line-height: 21px;
+}
+}

@@ -1,0 +1,97 @@
+.page-container {
+  width: 100%;
+}
+
+.main-back-button {
+  position: relative;
+  height: 43px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+}
+
+
+.dark {
+  background-color: #22212B;
+  box-shadow: 0 0 10px rgb(53, 52, 52);
+  color: white;
+  padding: 50px;
+}
+
+.light {
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  box-shadow: 0 0 10px rgb(53, 52, 52);
+  padding: 50px;
+}
+
+.title-block {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.intro {
+  
+  margin-bottom: 50px;
+}
+
+.intro-text {
+  width: 700px;
+  margin: 30px auto;
+}
+
+.page-title {
+  font-size: 50px;
+}
+.page-subtitle {
+  font-size: 25px;
+}
+
+.section-title {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.accent-text {
+  color: #A08551 ;
+}
+
+/* TABLET STYLING */
+
+@media only screen and (max-width: 768px) {
+  .title-block {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .intro-text {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  .main-back-button {
+    position: relative;
+    height: 43px;
+    position: fixed;
+    left: 2%;
+    top: 8px;
+  }
+}
+
+
+/* MOBILE STYLING */
+
+@media only screen and (max-width: 400px) {
+  .title-block {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .intro-text {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .main-back-button {
+    height: 30px;
+  }
+}

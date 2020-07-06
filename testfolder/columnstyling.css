@@ -1,0 +1,94 @@
+/* -------------------------------  MAIN COLUMNS ------------------------------- */
+
+
+.holder {
+  background-color: rgb(50, 47, 87);
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  transition: all 0.5s;
+  z-index: 1; 
+}
+
+.col {
+  display: inline-block;
+  width: 24%;
+  transition: all 0.25s;
+  height: 100%;
+  vertical-align: middle;
+  background-color: rgb(202, 202, 202);
+} 
+
+.col:hover {
+  cursor: pointer;
+}
+
+#column1 {
+  background-image: url('home_images/me.jpg');
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+#column2 {
+  background-image: url(https://i.pinimg.com/originals/25/1f/14/251f14614ca34c5b7034a4801cc2238e.jpg);
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+#column3 {
+  background-image: url(https://miro.medium.com/max/10046/1*a0DfkYiIIyvkFZD6HTsJUA.jpeg);
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+#column4 {
+  background-image: url(https://i.pinimg.com/564x/65/40/47/65404752e2a1c579e2941f324fede8f6.jpg);
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.inner-content {
+  margin: 50% auto;
+  padding: 10px;
+}
+
+.inner-text {
+  visibility: hidden;
+}
+
+h3 {
+  transition: all 0.25s;
+}
+
+.highlighted {
+  transform: scale(1.6);
+}
+
+
+/* MOBILE STYLING */
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: visible;
+}
+.holder {
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+  .col {
+    display: block;
+    width: 100%;
+    height: 25%;
+border: 1px solid rgb(50, 47, 87) ;
+    position: relative;
+    background-position: top;
+  } 
+  .inner-content {
+    margin: 0 auto;
+    padding-top: 23%;
+    font-size: 20px;
+  }
+}

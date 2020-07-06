@@ -1,0 +1,15 @@
+
+.about-me-image {
+  height: 400px;
+  outline: solid #22212B 4px;
+  outline-offset: 10px;
+}
+
+/* TABLET STYLING */
+
+@media only screen and (max-width: 768px) {
+  .about-me-image {
+    height: 300px;
+
+  }
+}

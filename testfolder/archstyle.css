@@ -1,0 +1,21 @@
+
+.services-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 40px auto;
+}
+
+.flex-item {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}
+
+/* TABLET STYLING */
+
+@media only screen and (max-width: 768px) {
+
+}
