@@ -22,14 +22,28 @@
   width: 150px;
   font-size: 18px;
   margin: 15px auto;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 
 .light-button {
   border: solid 2px #22212B;
+  color: #22212B;
+}
+
+.light-button:hover {
+  background-color:  #22212B;
+  color: white;
 }
 
 .dark-button {
   border: solid 2px #ffffff;
+  color: white;
+}
+
+.dark-button:hover {
+  background-color:  white;
+  color: #22212B;
 }
 
 /* TABLET STYLING */

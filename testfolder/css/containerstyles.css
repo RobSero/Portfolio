@@ -10,6 +10,9 @@
   top: 10px;
 }
 
+.main-back-button:hover {
+  cursor: pointer;
+}
 
 .dark {
   background-color: #22212B;
@@ -20,7 +23,7 @@
 
 .light {
   background-color: white;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   box-shadow: 0 0 10px rgb(53, 52, 52);
   padding: 50px;
 }
