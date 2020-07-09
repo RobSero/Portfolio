@@ -25,7 +25,7 @@
 }
 
 #column1 {
-  background-image: url('../home_images/me.jpg');
+  background-image: url('../home_images/rocks-faded.png');
   background-size: cover;
   filter: grayscale(100%);
 }
@@ -43,7 +43,7 @@
 }
 
 #column4 {
-  background-image: url(https://i.pinimg.com/564x/65/40/47/65404752e2a1c579e2941f324fede8f6.jpg);
+  background-image: url('../home_images/rubik.png');
   background-size: cover;
   filter: grayscale(100%);
 }
@@ -52,6 +52,7 @@
   margin: 50% auto;
   padding: 10px;
 }
+
 
 .inner-text {
   visibility: hidden;
@@ -62,7 +63,7 @@ h3 {
 }
 
 .highlighted {
-  transform: scale(1.6);
+  transform: scale(1.8);
 }
 
 
