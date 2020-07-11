@@ -85,11 +85,19 @@ h3 {
     height: 25%;
 border: 1px solid rgb(50, 47, 87) ;
     position: relative;
-    background-position: top;
   } 
   .inner-content {
     margin: 0 auto;
     padding-top: 23%;
     font-size: 20px;
+  }
+
+  #column1 {
+   background-position: 30% 20%
+  }
+  
+  
+  #column4 {
+    background-position: 20% 20%
   }
 }
