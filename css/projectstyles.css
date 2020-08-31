@@ -46,11 +46,47 @@
   color: #22212B;
 }
 
+/* UPCOMING PROJECTS FLEXBOX */
+.current-project-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 1px;
+}
+
+.project-flex-item {
+  width: 25%;
+  min-width: 300px;
+  margin: 5px;
+}
+
+.intro-flex-text {
+  margin: 0 auto;
+}
+
+.flex-title {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.flex-subtitle {
+  font-size: 13px;
+}
+
+.flex-description {
+  font-size: 13px;
+}
+
 /* TABLET STYLING */
 
 @media only screen and (max-width: 768px) {
   .project-image {
     width: 80%;
+  }
+  .project-flex-item {
+
+    margin-bottom: 20px
   }
 }
 
