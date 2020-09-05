@@ -105,16 +105,16 @@ backButton.forEach(button => {
   })
 })
 
-welcomePage.classList.add('welcome-show')
+// welcomePage.classList.add('welcome-show')
 // WELCOME SECTION
 setTimeout(()=> {
   welcomePage.classList.remove('welcome-show')
   welcomePage.classList.add('welcome-hide')
-},2000)
+},1500)
 
 setTimeout(()=> {
   welcomePage.classList.add('hide')
-},3000)
+},2500)
 
 // ABOUT ME SECTION
 
