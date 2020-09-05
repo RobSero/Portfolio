@@ -11,6 +11,7 @@ const aboutPage = document.querySelector('.about-container')
 const projectPage = document.querySelector('.project-container')
 const skillPage = document.querySelector('.skill-container')
 const archPage = document.querySelector('.arch-container')
+const welcomePage = document.querySelector('.welcome-container')
 
 // ABOUT
 const backButton = document.querySelectorAll('.main-back-button')
@@ -104,7 +105,16 @@ backButton.forEach(button => {
   })
 })
 
+welcomePage.classList.add('welcome-show')
+// WELCOME SECTION
+setTimeout(()=> {
+  welcomePage.classList.remove('welcome-show')
+  welcomePage.classList.add('welcome-hide')
+},2000)
 
+setTimeout(()=> {
+  welcomePage.classList.add('hide')
+},3000)
 
 // ABOUT ME SECTION
 
