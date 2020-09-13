@@ -114,7 +114,7 @@ setTimeout(()=> {
 
 setTimeout(()=> {
   welcomePage.classList.add('hide')
-},2500)
+},2000)
 
 // ABOUT ME SECTION
 
