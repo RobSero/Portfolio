@@ -31,7 +31,7 @@
 }
 
 #column2 {
-  background-image: url(https://i.pinimg.com/originals/25/1f/14/251f14614ca34c5b7034a4801cc2238e.jpg);
+  background-image: url('../home_images/flower.jpg');
   background-size: cover;
   filter: grayscale(100%);
 }
